@@ -6,6 +6,10 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Users/2402795/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Demonstration.umap",
+				"C:/Users/2402795/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Materials/MasterMaterials/M_AlphaTest.uasset",
+				"C:/Users/2402795/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Materials/MasterMaterials/M_Plants.uasset",
+				"C:/Users/2402795/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Materials/MI_FenceMetal_01.uasset",
+				"C:/Users/2402795/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Materials/MI_GrassVertical.uasset",
 				"D:/FGCT4007Framework/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Demonstration.umap"
 			]
 		}
