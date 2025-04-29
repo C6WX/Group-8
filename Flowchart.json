@@ -88,7 +88,7 @@
           "x": -240.0,
           "y": 520.0,
           "category": "dialogue",
-          "text": "Civlians run out the bank scared",
+          "text": "Civlians run out the bank scared and call the police",
           "isPlayerSpeaking": false,
           "trigger": null,
           "statToCheck": null,
@@ -107,14 +107,16 @@
           "x": -240.0,
           "y": 720.0,
           "category": "dialogue",
-          "text": "Uses the drill which takes longer then the key",
+          "text": "Drill minigame",
           "isPlayerSpeaking": false,
           "trigger": null,
           "statToCheck": null,
           "statPointsNeeded": 0,
           "diceRoll": false,
           "diceRollValue": 0,
-          "children": [],
+          "children": [
+            44
+          ],
           "diceFail_Children": "",
           "diceSuccess_Children": "",
           "notes": null
@@ -201,14 +203,16 @@
           "x": 400.0,
           "y": 940.0,
           "category": "dialogue",
-          "text": "Civilians run scared",
+          "text": "Civilians run scared and call the police",
           "isPlayerSpeaking": false,
           "trigger": null,
           "statToCheck": null,
           "statPointsNeeded": 0,
           "diceRoll": false,
           "diceRollValue": 0,
-          "children": [],
+          "children": [
+            38
+          ],
           "diceFail_Children": "",
           "diceSuccess_Children": "",
           "notes": null
@@ -358,7 +362,9 @@
           "statPointsNeeded": 0,
           "diceRoll": false,
           "diceRollValue": 0,
-          "children": [],
+          "children": [
+            33
+          ],
           "diceFail_Children": "",
           "diceSuccess_Children": "",
           "notes": null
@@ -445,6 +451,302 @@
           "y": 2380.0,
           "category": "end",
           "text": "All the crew get away and the driver looks back at you to celebrate but as they are disctracted, they crash into a car pulling out.",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 33,
+          "x": 500.0,
+          "y": 1900.0,
+          "category": "question",
+          "text": "Stay for more money?",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            34,
+            35
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 34,
+          "x": 640.0,
+          "y": 2080.0,
+          "category": "response",
+          "text": "No",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 35,
+          "x": 400.0,
+          "y": 2080.0,
+          "category": "response",
+          "text": "Yes",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            33,
+            36
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 36,
+          "x": 400.0,
+          "y": 2280.0,
+          "category": "end",
+          "text": "Crew ditches you out the back door and as you go to leave the bank with your extra cash, your crew runs you over",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 37,
+          "x": 640.0,
+          "y": 2280.0,
+          "category": "end",
+          "text": "Police shoot out your tires and the van crashes",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            34
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 38,
+          "x": 580.0,
+          "y": 1100.0,
+          "category": "dialogue",
+          "text": "Drilling mini game to open the vault",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            39
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 39,
+          "x": 580.0,
+          "y": 1240.0,
+          "category": "question",
+          "text": "Stay for more money?",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            41,
+            40
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 40,
+          "x": 740.0,
+          "y": 1400.0,
+          "category": "response",
+          "text": "No",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 41,
+          "x": 480.0,
+          "y": 1400.0,
+          "category": "response",
+          "text": "Yes",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 42,
+          "x": 740.0,
+          "y": 1600.0,
+          "category": "end",
+          "text": "You leave through the back door with your crew and the police have it blocked off. your crew member goes to shoot the police so you all get shot. ",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            40
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 43,
+          "x": 480.0,
+          "y": 1600.0,
+          "category": "end",
+          "text": "Your crew ditches you and leaves through the back door and get shot. You then go to leave after staying behind and the police shoot you, thinking you are a threat.",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            41
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 44,
+          "x": -240.0,
+          "y": 880.0,
+          "category": "question",
+          "text": "Stay for more money?",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            45,
+            46
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 45,
+          "x": -500.0,
+          "y": 1020.0,
+          "category": "response",
+          "text": "Yes",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            47
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 46,
+          "x": -220.0,
+          "y": 1040.0,
+          "category": "response",
+          "text": "No",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            48
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 47,
+          "x": -600.0,
+          "y": 1200.0,
+          "category": "end",
+          "text": "Your crew ditches you and leaves through the back door and get shot. You then go to leave after staying behind and the police shoot you, thinking you are a threat.",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 48,
+          "x": -320.0,
+          "y": 1220.0,
+          "category": "end",
+          "text": "You leave through the back door with your crew and the police have it blocked off. your crew member goes to shoot the police so you all get shot. ",
           "isPlayerSpeaking": false,
           "trigger": null,
           "statToCheck": null,
@@ -601,9 +903,111 @@
           "to": 32,
           "type": "standard",
           "label": ""
+        },
+        {
+          "from": 23,
+          "to": 33,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 33,
+          "to": 34,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 35,
+          "to": 33,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 33,
+          "to": 35,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 35,
+          "to": 36,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 37,
+          "to": 34,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 14,
+          "to": 38,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 38,
+          "to": 39,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 39,
+          "to": 41,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 39,
+          "to": 40,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 42,
+          "to": 40,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 43,
+          "to": 41,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 9,
+          "to": 44,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 44,
+          "to": 45,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 44,
+          "to": 46,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 45,
+          "to": 47,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 46,
+          "to": 48,
+          "type": "standard",
+          "label": ""
         }
       ],
-      "nextId": 33,
+      "nextId": 49,
       "statCategories": [
         "Strength",
         "Dexterity",
@@ -613,19 +1017,19 @@
         "Perception"
       ],
       "selectedNodeIDs": [
-        32
+        48
       ],
       "selectedConnectionKeys": [],
-      "primarySelectedNodeID": 32,
+      "primarySelectedNodeID": 48,
       "viewTransform": {
-        "m11": 1.1664,
+        "m11": 0.36769792467221374,
         "m12": 0.0,
         "m13": 0.0,
         "m21": 0.0,
-        "m22": 1.1664,
+        "m22": 0.36769792467221374,
         "m23": 0.0,
-        "m31": -48.55846373063943,
-        "m32": -1300.50811904011,
+        "m31": 907.2576708050127,
+        "m32": 2418.145128890693,
         "m33": 1.0
       }
     }
