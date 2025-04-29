@@ -1,0 +1,633 @@
+{
+  "projectFileVersion": "2.28 (Autosave)",
+  "darkMode": true,
+  "activeTabIndex": 0,
+  "dialogues": [
+    {
+      "projectName": "Untitled Dialogue",
+      "nodes": [
+        {
+          "id": 1,
+          "x": -100.0,
+          "y": -180.0,
+          "category": "dialogue",
+          "text": "grab the teller name tag",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            3
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 3,
+          "x": -100.0,
+          "y": 20.0,
+          "category": "question",
+          "text": "Kill the teller?",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            4,
+            5
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 4,
+          "x": 100.0,
+          "y": 300.0,
+          "category": "response",
+          "text": "no",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            10
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 5,
+          "x": -220.0,
+          "y": 300.0,
+          "category": "response",
+          "text": "yes",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            8
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 8,
+          "x": -240.0,
+          "y": 520.0,
+          "category": "dialogue",
+          "text": "Civlians run out the bank scared",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            9
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 9,
+          "x": -240.0,
+          "y": 720.0,
+          "category": "dialogue",
+          "text": "Uses the drill which takes longer then the key",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 10,
+          "x": 300.0,
+          "y": 480.0,
+          "category": "dialogue",
+          "text": "Colleague wants to kill teller for key",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            11
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 11,
+          "x": 300.0,
+          "y": 640.0,
+          "category": "question",
+          "text": "Did the player persuade colleague not to kill the teller?",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            12,
+            13
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 12,
+          "x": 180.0,
+          "y": 780.0,
+          "category": "response",
+          "text": "yes",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            15
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 13,
+          "x": 400.0,
+          "y": 780.0,
+          "category": "response",
+          "text": "No",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            14
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 14,
+          "x": 400.0,
+          "y": 940.0,
+          "category": "dialogue",
+          "text": "Civilians run scared",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 15,
+          "x": 180.0,
+          "y": 940.0,
+          "category": "dialogue",
+          "text": "Civilians stay",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            16
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 16,
+          "x": 40.0,
+          "y": 1120.0,
+          "category": "question",
+          "text": "Does the player take the civilain's phones?",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            18,
+            19
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 18,
+          "x": -80.0,
+          "y": 1300.0,
+          "category": "response",
+          "text": "Yes",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            20
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 19,
+          "x": 160.0,
+          "y": 1300.0,
+          "category": "response",
+          "text": "No",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 20,
+          "x": -80.0,
+          "y": 1520.0,
+          "category": "dialogue",
+          "text": "Police arent called yet",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            22
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 21,
+          "x": 180.0,
+          "y": 1520.0,
+          "category": "dialogue",
+          "text": "Police get called by civilians and arrive sooner",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            19,
+            23
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 22,
+          "x": -80.0,
+          "y": 1740.0,
+          "category": "dialogue",
+          "text": "Teller opens the vault and then runs and sets off silent alarm",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            24
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 23,
+          "x": 180.0,
+          "y": 1740.0,
+          "category": "dialogue",
+          "text": "Teller opens the vault",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 24,
+          "x": -80.0,
+          "y": 1980.0,
+          "category": "question",
+          "text": "Stay for more money?",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            16,
+            26,
+            30
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 26,
+          "x": 40.0,
+          "y": 2160.0,
+          "category": "response",
+          "text": "No",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            32
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 30,
+          "x": -240.0,
+          "y": 2160.0,
+          "category": "response",
+          "text": "yes",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 31,
+          "x": -240.0,
+          "y": 2380.0,
+          "category": "end",
+          "text": "Crew throws money in the van but you have to go back for more so your colleagues leave you and you get shot by the police",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            30
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 32,
+          "x": 40.0,
+          "y": 2380.0,
+          "category": "end",
+          "text": "All the crew get away and the driver looks back at you to celebrate but as they are disctracted, they crash into a car pulling out.",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        }
+      ],
+      "connections": [
+        {
+          "from": 1,
+          "to": 3,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 3,
+          "to": 5,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 4,
+          "to": 10,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 5,
+          "to": 8,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 11,
+          "to": 13,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 12,
+          "to": 15,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 16,
+          "to": 18,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 16,
+          "to": 19,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 18,
+          "to": 20,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 21,
+          "to": 19,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 20,
+          "to": 22,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 21,
+          "to": 23,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 24,
+          "to": 16,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 22,
+          "to": 24,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 24,
+          "to": 26,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 24,
+          "to": 30,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 31,
+          "to": 30,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 26,
+          "to": 32,
+          "type": "standard",
+          "label": ""
+        }
+      ],
+      "nextId": 33,
+      "statCategories": [
+        "Strength",
+        "Dexterity",
+        "Intelligence",
+        "Wisdom",
+        "Charisma",
+        "Perception"
+      ],
+      "selectedNodeIDs": [
+        32
+      ],
+      "selectedConnectionKeys": [],
+      "primarySelectedNodeID": 32,
+      "viewTransform": {
+        "m11": 1.1664,
+        "m12": 0.0,
+        "m13": 0.0,
+        "m21": 0.0,
+        "m22": 1.1664,
+        "m23": 0.0,
+        "m31": -48.55846373063943,
+        "m32": -1300.50811904011,
+        "m33": 1.0
+      }
+    }
+  ]
+}
