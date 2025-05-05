@@ -5,6 +5,12 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Github/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Demonstration.umap",
+				"C:/Github/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/UI/WBP_PauseMenu.uasset",
+				"C:/Github/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/Core/GM_FGCT4007.uasset",
+				"C:/Github/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/Core/MC/BP_ThirdPersonCharacter.uasset",
+				"C:/Github/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/Core/MC/Input/Actions/IA_PauseGame.uasset",
+				"C:/Github/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/Core/MC/Input/IMC_Default.uasset",
 				"C:/Users/2402795/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Demonstration.umap",
 				"C:/Users/2402795/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Materials/MasterMaterials/M_AlphaTest.uasset",
 				"C:/Users/2402795/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Materials/MasterMaterials/M_Plants.uasset",
