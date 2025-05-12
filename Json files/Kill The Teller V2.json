@@ -1,0 +1,821 @@
+{
+  "projectFileVersion": "2.28 (Autosave)",
+  "darkMode": true,
+  "activeTabIndex": 0,
+  "dialogues": [
+    {
+      "projectName": "Untitled Dialogue",
+      "nodes": [
+        {
+          "id": 0,
+          "x": 120.0,
+          "y": -200.0,
+          "category": "question",
+          "text": "Should I shoot the teller in case they set off the silent alarm?",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            1,
+            5
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 1,
+          "x": 0.0,
+          "y": -40.0,
+          "category": "response",
+          "text": "Shoot the teller",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 2,
+          "x": 0.0,
+          "y": 120.0,
+          "category": "dialogue",
+          "text": "You made the right choice; she\u2019ll just be seen as collateral damage anyway.",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 3,
+          "x": 0.0,
+          "y": 280.0,
+          "category": "dialogue",
+          "text": "*Roland looks stunned, his face and jacket smeared in blood* \n",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 4,
+          "x": 0.0,
+          "y": 440.0,
+          "category": "dialogue",
+          "text": "Your honour has lowered",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 5,
+          "x": 240.0,
+          "y": -40.0,
+          "category": "response",
+          "text": "Leave the teller alive",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            6
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 6,
+          "x": 240.0,
+          "y": 80.0,
+          "category": "dialogue",
+          "text": "*Roland lowers his gun, exclaiming his worries*",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            7
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 7,
+          "x": 240.0,
+          "y": 220.0,
+          "category": "dialogue",
+          "text": " I... I can\u2019t do it, she has a family, she shouldn\u2019t even be involved with this!",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            8
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 8,
+          "x": 240.0,
+          "y": 360.0,
+          "category": "dialogue",
+          "text": "Fine, if you won\u2019t, I will!\u201d",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            9
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 9,
+          "x": 240.0,
+          "y": 500.0,
+          "category": "dialogue",
+          "text": "*Kylie grins as he brandishes his handgun and shoves the barrel down the tellers throat, the two of them get into a struggle* ",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            10
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 10,
+          "x": 240.0,
+          "y": 700.0,
+          "category": "question",
+          "text": "Do you want to...?",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            11,
+            19,
+            25
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 11,
+          "x": 120.0,
+          "y": 840.0,
+          "category": "response",
+          "text": "Let Kylie kill the teller",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 12,
+          "x": 120.0,
+          "y": 960.0,
+          "category": "dialogue",
+          "text": "",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            13
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 13,
+          "x": 120.0,
+          "y": 1080.0,
+          "category": "dialogue",
+          "text": "Really? The one person that knew how to get into the vault, and you just dispose of them like that? Goddamn it, time for plan B! I\u2019ll go get the drills; you and Roland just stay here and try not to fuck anything else up...",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            14
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 14,
+          "x": 120.0,
+          "y": 1200.0,
+          "category": "dialogue",
+          "text": "*A civillian runs out afraid and calls the police. At this point the alarm is triggered.*",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            15
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 15,
+          "x": 120.0,
+          "y": 1320.0,
+          "category": "dialogue",
+          "text": "GODDAMN IT KYLIE!",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            16
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 16,
+          "x": 120.0,
+          "y": 1460.0,
+          "category": "dialogue",
+          "text": "What? It was part of the plan, right?",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            17
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 17,
+          "x": 120.0,
+          "y": 1580.0,
+          "category": "dialogue",
+          "text": "*Bain sighs in disappointment*",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            18
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 18,
+          "x": 120.0,
+          "y": 1720.0,
+          "category": "dialogue",
+          "text": "Just get what you fucking can, I'm so done...",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 19,
+          "x": 340.0,
+          "y": 840.0,
+          "category": "response",
+          "text": "Intervene",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            20
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 20,
+          "x": 340.0,
+          "y": 960.0,
+          "category": "dialogue",
+          "text": "*Roland pushes Kylie away from the teller and tries to reason with her, restraining her but speaking to her in a calm tone.* ",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            21
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 21,
+          "x": 340.0,
+          "y": 1100.0,
+          "category": "dialogue",
+          "text": "I apologize for my colleague's behavior; he doesn\u2019t know etiquette even if it killed him. I want to keep people unharmed unlike him so I'm willing to cut a deal: if you open the vault, I'lf make sure you\u2019re free straight afterwards. We\u2019re both in bad situations so if we work together, we can make sure this ends quickly.",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            22
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 22,
+          "x": 340.0,
+          "y": 1240.0,
+          "category": "dialogue",
+          "text": "Al-Alright, just don\u2019t hurt me!",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            23
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 23,
+          "x": 340.0,
+          "y": 1380.0,
+          "category": "dialogue",
+          "text": "Don\u2019t worry, i won\u2019t and i make sure they won\u2019t as well.",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            24
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 24,
+          "x": 340.0,
+          "y": 1520.0,
+          "category": "dialogue",
+          "text": "Honour increased",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 25,
+          "x": 540.0,
+          "y": 840.0,
+          "category": "response",
+          "text": "Persuade Kylie not to shoot",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            26
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 26,
+          "x": 540.0,
+          "y": 960.0,
+          "category": "dialogue",
+          "text": "Oi Kylie, you sure you want to do that?",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            27
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 27,
+          "x": 540.0,
+          "y": 1100.0,
+          "category": "dialogue",
+          "text": "Why shouldn\u2019t i kill her, she\u2019s just a liability!",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            28
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 28,
+          "x": 540.0,
+          "y": 1220.0,
+          "category": "dialogue",
+          "text": "She can get us into the vault and knows how to skip the safeguarding, killing her would be stupid",
+          "isPlayerSpeaking": true,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            29
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 29,
+          "x": 540.0,
+          "y": 1340.0,
+          "category": "dialogue",
+          "text": "Fine...",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            30
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 30,
+          "x": 540.0,
+          "y": 1460.0,
+          "category": "dialogue",
+          "text": "*Kylie looks at the teller, moving the gun from the back of her mouth to her face*",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            31
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 31,
+          "x": 540.0,
+          "y": 1580.0,
+          "category": "dialogue",
+          "text": "But one wrong move and it\u2019s the chalk for you!",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [
+            32
+          ],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        },
+        {
+          "id": 32,
+          "x": 540.0,
+          "y": 1700.0,
+          "category": "dialogue",
+          "text": "Fine, but don\u2019t expect any promises, you prick!",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": null
+        }
+      ],
+      "connections": [
+        {
+          "from": 0,
+          "to": 1,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 0,
+          "to": 5,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 10,
+          "to": 19,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 23,
+          "to": 24,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 10,
+          "to": 25,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 25,
+          "to": 26,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 26,
+          "to": 27,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 27,
+          "to": 28,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 28,
+          "to": 29,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 29,
+          "to": 30,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 30,
+          "to": 31,
+          "type": "standard",
+          "label": ""
+        },
+        {
+          "from": 31,
+          "to": 32,
+          "type": "standard",
+          "label": ""
+        }
+      ],
+      "nextId": 33,
+      "statCategories": [
+        "Strength",
+        "Dexterity",
+        "Intelligence",
+        "Wisdom",
+        "Charisma",
+        "Perception"
+      ],
+      "selectedNodeIDs": [
+        28
+      ],
+      "selectedConnectionKeys": [],
+      "primarySelectedNodeID": 28,
+      "viewTransform": {
+        "m11": 0.6301696268831044,
+        "m12": 0.0,
+        "m13": 0.0,
+        "m21": 0.0,
+        "m22": 0.6301696268831044,
+        "m23": 0.0,
+        "m31": 4.1172197064670275,
+        "m32": 8.468594176493813,
+        "m33": 1.0
+      }
+    }
+  ]
+}
