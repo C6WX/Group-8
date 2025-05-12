@@ -1,0 +1,55 @@
+{
+  "projectFileVersion": "2.28 (Autosave)",
+  "darkMode": true,
+  "activeTabIndex": 0,
+  "dialogues": [
+    {
+      "projectName": "Untitled Dialogue",
+      "nodes": [
+        {
+          "id": 0,
+          "x": -60.0,
+          "y": -40.0,
+          "text": "Alright, you remember the plan, right? Get in, get the cash, get out. Only do what you have to do.",
+          "category": "dialogue",
+          "isPlayerSpeaking": false,
+          "trigger": null,
+          "statToCheck": null,
+          "statPointsNeeded": 0,
+          "diceRoll": false,
+          "diceRollValue": 0,
+          "children": [],
+          "diceFail_Children": "",
+          "diceSuccess_Children": "",
+          "notes": "This is the starting node (ID 0)."
+        }
+      ],
+      "connections": [],
+      "nextId": 1,
+      "statCategories": [
+        "Strength",
+        "Dexterity",
+        "Intelligence",
+        "Wisdom",
+        "Charisma",
+        "Perception"
+      ],
+      "selectedNodeIDs": [
+        0
+      ],
+      "selectedConnectionKeys": [],
+      "primarySelectedNodeID": 0,
+      "viewTransform": {
+        "m11": 1.0,
+        "m12": 0.0,
+        "m13": 0.0,
+        "m21": 0.0,
+        "m22": 1.0,
+        "m23": 0.0,
+        "m31": 0.0,
+        "m32": 0.0,
+        "m33": 1.0
+      }
+    }
+  ]
+}
