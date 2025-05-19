@@ -1,0 +1,16 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/2409342/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/CreatedAssets/Cash/NewMaterial.uasset",
+				"C:/Users/2409342/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Scene.umap",
+				"C:/Users/2409342/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/CreatedAssets/Crowbar/NewMaterial1.uasset",
+				"C:/Users/2409342/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/CreatedAssets/Bullet/NewMaterial2.uasset",
+				"C:/Users/2409342/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/CreatedAssets/Cash/Cash_Textures.uasset"
+			]
+		}
+	]
+}
