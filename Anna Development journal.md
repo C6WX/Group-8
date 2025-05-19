@@ -1,6 +1,4 @@
-# [TASK NAME]
-
-[Module Name]
+# FGCT4007: Interactive Narratives 24/25
 
 Anna Rogers
 
@@ -10,25 +8,25 @@ Anna Rogers
 
 ### What sources or references have you identified as relevant to this task?
 
-- What type of sources did you identity and want to explore? How would you justify it in reference to the brief set? Think about the focus of the brief.
-- What type of sources do you want to avoid? How could these kinds of sources be detrimental to the user experience, immersion or implementation?
-
-
 
 #### Sources
 
-- An opening paragraph about the source stating the author, developer or organisation, this paragraph should explain the source's influence, credentials, critical reception, awards, reputation or any issues with the source. For example, if the source is not reputable. If the source is a game, the issues that occurred during development or if had a poor launch.
-- List the aspects analysed in reference to the current task.
-- An ending paragraph stating what you enjoyed or disliked, what you agreed with or not agree with.
+
 
 
 # Example Documentation
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O7vmp73ue4Y?si=187gZ8scv8TxHz20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d6PEmrdtUjM?si=v70UWlcKxXZ07AAK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Futs4Jh8glA?si=-xGHWT5rd9unFkim" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
 ## Implementation
-
+<iframe src="https://blueprintue.com/render/msuceinn/" scrolling="no" allowfullscreen></iframe>
+<iframe src="https://blueprintue.com/render/8pate1o5/" scrolling="no" allowfullscreen></iframe>
+<iframe src="https://blueprintue.com/render/fuupuosm/" scrolling="no" allowfullscreen></iframe>
 ### What was the process of completing the task? What influenced your decision making?
 
 
