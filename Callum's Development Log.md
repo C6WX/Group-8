@@ -177,11 +177,13 @@ One technical difficulty I faced during development was an error that occured wh
 
 ### What did or did not work well and why?
 
-
+One thing that worked well was the dialogue system. After adding a few tweaks to it, the dialogue system was very easy to used and fitted the requirements that were needed from it to create the game.
+<br>
+One thing that didn't work well was the teleporters as there were quite a few errors that occured during development so I ended up just making them using and easier but messier method.
 
 ### What would you do differently next time?
 
-
+Next time I would spend more time planning each feature as I feel that each thing works but could be better then it currently is. Also I would spend more time thinking about the amount of interaction the player will have as the player was meant to have lots of interactions within the game but due to time contstraints, not everything that we wished were added, was added to the game.
 
 ## Bibliography
 
