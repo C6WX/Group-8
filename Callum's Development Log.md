@@ -31,7 +31,7 @@ The first part of the game that I developed was the pause menu.
 <iframe width="600" height="600" src="https://blueprintue.com/render/-4969-g2/" scrolling="no" allowfullscreen></iframe>
 <br>
 
-*Figure 2. The script on the player that displays the pause menu and managers the controls when esc is pressed*
+*Figure 2. The script on the player that displays the pause menu and manages the controls when esc is pressed*
 <br>
 <br>
 For the pause menu, I programmed a script that displays the pause menu when esc is pressed. The menu consists of three buttons. The Resume button unlocks the player's controls and hides the pause menu, the settings button displays the settings menu and the quit button closes the game.
