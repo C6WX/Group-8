@@ -158,6 +158,35 @@ To work alongside the cash script, I created a cash UI blueprint that displays t
 <br>
 <br>
 The main problem that I had to deal with when creating this UI was the format text node as I have never mixed variables and text before, leading me to research different nodes.
+<br>
+<br>
+The last thing I added to the game is the van crash ending. To do this I used a sequence to move the van and then used collisions to play the van crash and also to roll the credits once the crash occurs.
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/-3-a75fz/" scrolling="no" allowfullscreen></iframe>
+<br>
+
+*Figure 17. This blueprint disables the players movement and turns them to the left to face the van's direction before playing the van sequence.*
+<br>
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/mmxgx6dt/" scrolling="no" allowfullscreen></iframe>
+<br>
+
+*Figure 18. When the van collides with the player, this script runs to run a custom event on the player character.*
+<br>
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/us83hs7l/" scrolling="no" allowfullscreen></iframe>
+<br>
+
+*Figure 19. This script enables a play credits variable that the scene script accesses.*
+<br>
+<br>
+<iframe src="https://blueprintue.com/render/7ayrndxi/" scrolling="no" allowfullscreen></iframe>
+<br>
+
+*Figure 20. Adds the credits to the viewport when the play credits variable equals true.*
+<br>
+<br>
+
 
 ### What creative or technical approaches did you use or try, and how did this contribute to the outcome?
 
