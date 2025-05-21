@@ -22,17 +22,8 @@
 		{
 			"ShaderMapHash": "171606064EA4501A5D0F37D0F682F17E731AF1AD",
 			"Assets": [
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Eyes",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Hair",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Jacket",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/JacketTrim",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Jeans",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Nose1",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Shoes",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Skin",
 				"/Game/Dynamic/LittleFellow/standardSurface1",
-				"/Game/Dynamic/LittleFellow/standardSurface2",
-				"/Game/Static/Characters/Kylie/standardSurface1"
+				"/Game/Dynamic/LittleFellow/standardSurface2"
 			]
 		},
 		{
@@ -90,6 +81,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "0E18E4252C2890F7C0E172FDD6F104F0A73335AF",
+			"Assets": [
+				"/Game/Dynamic/AssetsvilleTown/Materials/MasterMaterials/M_BaseColorPalette"
+			]
+		},
+		{
 			"ShaderMapHash": "DACFFF287D040982988628E26A3B173B214843B5",
 			"Assets": [
 				"/SpeedTreeImporter/SpeedTree9/SpeedTreeMaster"
@@ -143,6 +140,12 @@
 			"ShaderMapHash": "58710E3FB2580A77C49A10DC396823347F61F697",
 			"Assets": [
 				"/Engine/EngineMaterials/Widget3DPassThrough_Opaque_OneSided"
+			]
+		},
+		{
+			"ShaderMapHash": "2008203FA0B9A944012E60F7BF53C19DA8BB900C",
+			"Assets": [
+				"/Engine/BasicShapes/BasicShapeMaterial"
 			]
 		},
 		{
@@ -389,12 +392,6 @@
 			"ShaderMapHash": "C19DDBA33C680366C31B82920641A0A7806DF1B4",
 			"Assets": [
 				"/Engine/EditorLandscapeResources/SplineEditorMeshMat"
-			]
-		},
-		{
-			"ShaderMapHash": "A0D044A40DC894D34B99C4B1F0C4483B613C6B81",
-			"Assets": [
-				"/Game/Dynamic/AssetsvilleTown/Materials/MasterMaterials/M_BaseColorPalette"
 			]
 		},
 		{

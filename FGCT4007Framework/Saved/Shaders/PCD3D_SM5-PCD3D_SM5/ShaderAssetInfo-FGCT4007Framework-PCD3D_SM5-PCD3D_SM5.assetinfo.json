@@ -185,6 +185,12 @@
 			]
 		},
 		{
+			"ShaderMapHash": "95BFE255AA5B64E9FA2BC7A300B940C9814B3EBF",
+			"Assets": [
+				"/Engine/BasicShapes/BasicShapeMaterial"
+			]
+		},
+		{
 			"ShaderMapHash": "0DD704565096439AD6E58B7AA380658024BBC5DF",
 			"Assets": [
 				"/Interchange/gltf/MaterialInstances/MI_Unlit_Blend"
@@ -487,17 +493,8 @@
 		{
 			"ShaderMapHash": "B5648ED7F0457BECDFFE1EE009A8884E7C3218CE",
 			"Assets": [
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Eyes",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Hair",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Jacket",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/JacketTrim",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Jeans",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Nose1",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Shoes",
-				"/Game/Dynamic/Animations/MainCharacter_Assest/MainCharacter_Bind/Materials/Skin",
 				"/Game/Dynamic/LittleFellow/standardSurface1",
-				"/Game/Dynamic/LittleFellow/standardSurface2",
-				"/Game/Static/Characters/Kylie/standardSurface1"
+				"/Game/Dynamic/LittleFellow/standardSurface2"
 			]
 		},
 		{

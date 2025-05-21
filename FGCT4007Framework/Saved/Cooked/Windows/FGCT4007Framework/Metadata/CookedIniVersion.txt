@@ -28,26 +28,6 @@ Editor:/Script/UnrealEd.ActorFactoryPointLight:MenuPriority:0=19
 Editor:/Script/UnrealEd.ActorFactorySpotLight:MenuPriority:0=19
 Editor:/Script/UnrealEd.ActorFactorySkeletalMesh:MenuPriority:0=13
 Editor:/Script/UnrealEd.ActorFactoryAmbientSound:MenuPriority:0=11
-Editor:BlueprintEditor.Favorites:DefaultProfile:0=StarterProfile
-Editor:BlueprintEditor.Favorites:StarterProfile:0=(NodeName="/Script/BlueprintGraph.K2Node_Event", FieldName="/Script/Engine.ActorReceiveBeginPlay")
-Editor:BlueprintEditor.Favorites:StarterProfile:1=(NodeName="/Script/BlueprintGraph.K2Node_Event", FieldName="/Script/Engine.ActorReceiveTick")
-Editor:BlueprintEditor.Favorites:StarterProfile:2=(NodeName="/Script/BlueprintGraph.K2Node_CallFunction", FieldName="/Script/Engine.GameplayStaticsGetPlayerPawn")
-Editor:BlueprintEditor.Favorites:StarterProfile:3=(NodeName="/Script/BlueprintGraph.K2Node_IfThenElse")
-Editor:BlueprintEditor.Favorites:StarterProfile:4=(NodeName="/Script/BlueprintGraph.K2Node_CallFunction", FieldName="/Script/Engine.ActorGetTransform")
-Editor:BlueprintEditor.Favorites:StarterProfile:5=(NodeName="/Script/BlueprintGraph.K2Node_CallFunction", FieldName="/Script/Engine.ActorK2_DestroyActor")
-Editor:BlueprintEditor.Favorites:StarterProfile:6=(NodeName="/Script/BlueprintGraph.K2Node_CallFunction", FieldName="/Script/Engine.GameplayStaticsGetAllActorsOfClass")
-Editor:BlueprintEditor.Favorites:StarterProfile:7=(NodeName="/Script/BlueprintGraph.K2Node_SpawnActorFromClass")
-Editor:BlueprintEditor.Favorites:StarterProfile:8=(NodeName="/Script/BlueprintGraph.K2Node_PromotableOperator")
-Editor:BlueprintEditor.Favorites:StarterProfile:9=(FieldName="/Script/TimeManagement.TimeManagementBlueprintLibraryAdd_FrameNumberInteger",NodeName="/Script/BlueprintGraph.K2Node_PromotableOperator")
-Editor:BlueprintEditor.Favorites:StarterProfile:10=(FieldName="/Script/TimeManagement.TimeManagementBlueprintLibrarySubtract_FrameNumberInteger",NodeName="/Script/BlueprintGraph.K2Node_PromotableOperator")
-Editor:BlueprintEditor.Favorites:StarterProfile:11=(FieldName="/Script/GameplayTags.BlueprintGameplayTagLibraryEqualEqual_GameplayTagContainer",NodeName="/Script/BlueprintGraph.K2Node_PromotableOperator")
-Editor:BlueprintEditor.Favorites:StarterProfile:12=(FieldName="/Script/TimeManagement.TimeManagementBlueprintLibraryDivide_FrameNumberInteger",NodeName="/Script/BlueprintGraph.K2Node_PromotableOperator")
-Editor:BlueprintEditor.Favorites:StarterProfile:13=(FieldName="/Script/Engine.KismetMathLibraryGreater_TimespanTimespan",NodeName="/Script/BlueprintGraph.K2Node_PromotableOperator")
-Editor:BlueprintEditor.Favorites:StarterProfile:14=(FieldName="/Script/Engine.KismetMathLibraryGreaterEqual_TimespanTimespan",NodeName="/Script/BlueprintGraph.K2Node_PromotableOperator")
-Editor:BlueprintEditor.Favorites:StarterProfile:15=(FieldName="/Script/Engine.KismetMathLibraryLess_TimespanTimespan",NodeName="/Script/BlueprintGraph.K2Node_PromotableOperator")
-Editor:BlueprintEditor.Favorites:StarterProfile:16=(FieldName="/Script/Engine.KismetMathLibraryLessEqual_TimespanTimespan",NodeName="/Script/BlueprintGraph.K2Node_PromotableOperator")
-Editor:BlueprintEditor.Favorites:StarterProfile:17=(FieldName="/Script/GameplayTags.BlueprintGameplayTagLibraryNotEqual_GameplayTagContainer",NodeName="/Script/BlueprintGraph.K2Node_PromotableOperator")
-Editor:BlueprintEditor.Favorites:StarterProfile:18=(FieldName="/Script/TimeManagement.TimeManagementBlueprintLibraryMultiply_SecondsFrameRate",NodeName="/Script/BlueprintGraph.K2Node_PromotableOperator")
 Editor:UserDefinedStructure:bUseUserDefinedStructure:0=true
 Editor:CustomBlueprintFunctionLibrary:bCanCreateNew:0=true
 Editor:StructSerialization:SkipByteCodeSerialization:0=true
@@ -310,8 +290,6 @@ Engine:Core.System:CanSkipEditorReferencedPackagesWhenCooking:0=False
 Engine:Core.System:CanUseUnversionedPropertySerialization:0=True
 Engine:Core.System:TestUnversionedPropertySerializationWhenCooking:0=False
 Engine:Core.System:DetailedCallstacksInNonMonolithicBuilds:0=True
-Engine:Core.System:AssetLogShowsDiskPath:0=True
-Engine:Core.System:AssetLogShowsAbsolutePath:0=True
 Engine:Core.ContentVirtualization:SystemName:0=None
 Engine:Core.ContentVirtualization:LazyInit:0=False
 Engine:Core.ContentVirtualization:InitPreSlate:0=False
@@ -416,7 +394,6 @@ Engine:DevOptions.Shaders:bLogJobCompletionTimes:0=False
 Engine:DevOptions.Shaders:ProcessGameThreadTargetTime:0=.01
 Engine:DevOptions.Shaders:WorkerTimeToLive:0=20
 Engine:DevOptions.Shaders:BuildWorkerTimeToLive:0=1200
-Engine:DevOptions.Shaders:WorkerProcessPriority:0=-1
 Engine:DevOptions.Shaders:bForceUseSCWMemoryPressureLimits:0=False
 Engine:LogFiles:PurgeLogsDays:0=5
 Engine:LogFiles:MaxLogFilesOnDisk:0=10
@@ -728,7 +705,7 @@ Engine:/Script/ChaosVD.ChaosVDEditorSettings:SimOnlyMeshesMaterial:0=/ChaosVD/Ma
 Engine:/Script/ChaosVD.ChaosVDEditorSettings:InstancedMeshesMaterial:0=/ChaosVD/Materials/ChaosVDInstanced.ChaosVDInstanced
 Engine:/Script/ChaosVD.ChaosVDEditorSettings:InstancedMeshesQueryOnlyMaterial:0=/ChaosVD/Materials/ChaosVDInstancedQueryOnly.ChaosVDInstancedQueryOnly
 Engine:/Script/ChaosVD.ChaosVDEditorSettings:SkySphereActorClass:0=/ChaosVD/BP_CVD_SkySphere.BP_CVD_SkySphere_C
-Game:/Script/DeveloperToolSettings.PlatformsMenuSettings:StagingDirectory:0=(Path="C/Users/2311323/Downloads")
+Game:/Script/DeveloperToolSettings.PlatformsMenuSettings:StagingDirectory:0=(Path="C/Users/2404781/Documents")
 Game:/Script/DeveloperToolSettings.PlatformsMenuSettings:PerPlatformBuildConfig:0=(("Windows", PPBC_Shipping))
 Game:/Script/DeveloperToolSettings.PlatformsMenuSettings:LaunchOnTarget:0=
 Game:/Script/DeveloperToolSettings.PlatformsMenuSettings:PerPlatformTargetFlavorName:0=(("Android", "Android_ASTC"))
