@@ -7,15 +7,15 @@ Anna Rogers
 ## Research
 For this game, I researched door mechanics to control how the player accesses certain areas of the scene and to prevent them from reaching the ending too quickly. I used several tutorial videos to support this, though not all were equally helpful.
 
-The video by Gorka Games, for example, was difficult to follow—particularly when it came to applying the static mesh to the door. I felt the explanations were lacking in detail, which made it hard to understand what was actually happening. In my opinion, this tutorial wasn’t very useful.
+The video by Gorka Games (Learn How to Open and Close Doors in Unreal Engine 5 - YouTube, s.d.), for example, was difficult to follow—particularly when it came to applying the static mesh to the door. I felt the explanations were lacking in detail, which made it hard to understand what was actually happening. In my opinion, this tutorial wasn’t very useful.
 
-In contrast, FCB Dev created a video on keycard door mechanics that was far more descriptive and easier to follow. Even though I didn’t need the keycard functionality, I was able to adapt the basic door-opening mechanic from this tutorial, which became the foundation for the final version of my door system.
+In contrast, FCB Dev created a video on keycard door mechanics (How To Make Keycard Doors | Unreal Engine 5 Tutorial - YouTube, s.d.) that was far more descriptive and easier to follow. Even though I didn’t need the keycard functionality, I was able to adapt the basic door-opening mechanic from this tutorial, which became the foundation for the final version of my door system.
 
-Matt Aspland created a door system that locks behind the player. I used his explanation of how to get the door to close automatically and adapted it for my own one-way door mechanic. In my version, the door needed to close and lock after the player passed through it, preventing them from going back. However, because the door was initially left open, I also had to modify the system to ensure the door could close again and allow for further interaction.
+Matt Aspland created a door system that locks behind the player (How To Create A Door Which Locks Behind The Player | Horror Door - Unreal Engine 5 Tutorial - YouTube, s.d.). I used his explanation of how to get the door to close automatically and adapted it for my own one-way door mechanic. In my version, the door needed to close and lock after the player passed through it, preventing them from going back. However, because the door was initially left open, I also had to modify the system to ensure the door could close again and allow for further interaction.
 
-For the end credits, I referred back to a video I had previously used and expanded upon it to enhance the end credits scene. I used the basic animation logic provided in the video to add fade-ins and additional movement mechanics, improving the overall player experience. The video was especially helpful for anyone looking to create an end credits sequence, as it provided a simple foundation that was easy to build upon and adapt to fit our gameplay.
+For the end credits, I referred back to a video I had previously used and expanded upon it to enhance the end credits scene (How to Make a Credits Menu in Unreal Engine 5 - YouTube, s.d.). I used the basic animation logic provided in the video to add fade-ins and additional movement mechanics, improving the overall player experience. The video was especially helpful for anyone looking to create an end credits sequence, as it provided a simple foundation that was easy to build upon and adapt to fit our gameplay.
 
-I researched into how to manipulate fog in a wild setting I used the video how to localise volumetric fog in Unreal Engine 5 from Ryan Laley this video went into depth about the basic settings of the exponential height fog something which I have not touched previously in any of my other projects it was very helpful for him to go through the settings and how to disperse the fog or condense it as well as change the opacity I wanted my fog to be quite dense and thick so I was able to do that with the help of the video I then moved what I had learned about the exponential height fog into a volumetric material all of this was very well explained by the YouTube creator and I highly recommend his videos
+I researched into how to manipulate fog in a wild setting I used the video how to localise volumetric fog in Unreal Engine 5 from Ryan Laley (How to... Localized Volumetric Fog in Unreal Engine 5, 2023) this video went into depth about the basic settings of the exponential height fog something which I have not touched previously in any of my other projects it was very helpful for him to go through the settings and how to disperse the fog or condense it as well as change the opacity I wanted my fog to be quite dense and thick so I was able to do that with the help of the video I then moved what I had learned about the exponential height fog into a volumetric material all of this was very well explained by the YouTube creator and I highly recommend his videos
 
 
 
@@ -24,23 +24,32 @@ I researched into how to manipulate fog in a wild setting I used the video how t
 #### Sources
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O7vmp73ue4Y?si=187gZ8scv8TxHz20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Figure 1** Shows the video made by Gorka Games, this video I didn't find particularly useful as the lack of explanation made it very hard to follow along with what was happening within the video. I wouldn't recommend using this video.
+**Figure 1** Shows the video made by Gorka Games (Learn How to Open and Close Doors in Unreal Engine 5 - YouTube, s.d.), this video I didn't find particularly useful as the lack of explanation made it very hard to follow along with what was happening within the video. I wouldn't recommend using this video.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d6PEmrdtUjM?si=v70UWlcKxXZ07AAK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Figure 2** Shows the video made by FCB Dev, This was an extremely useful video as he explains things in a way I found very helpful. Everything was clear and easy to understand. I would recommend this video to people.
+**Figure 2** Shows the video made by FCB Dev (How To Make Keycard Doors | Unreal Engine 5 Tutorial - YouTube, s.d.), This was an extremely useful video as he explains things in a way I found very helpful. Everything was clear and easy to understand. I would recommend this video to people.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Futs4Jh8glA?si=-xGHWT5rd9unFkim" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Figure 3** Shows a video by Matt Asplaned, this video helped me start on my one way door system. While I didn't use the whole video what I did watch and use helped me to create my smooth door system.
+**Figure 3** Shows a video by Matt Asplaned (How To Create A Door Which Locks Behind The Player | Horror Door - Unreal Engine 5 Tutorial - YouTube, s.d.), this video helped me start on my one way door system. While I didn't use the whole video what I did watch and use helped me to create my smooth door system.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LmLjLQbyq-4?si=LhZtUawPlAJ7oGfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Figure 4** Shows a video my Gorka Games, This video is really simple to follow along as It's short and minimal if any key shortcuts were used in this video. This means you could pause and run it though step by step without getting confused.
+**Figure 4** Shows a video my Gorka Games (How to Make a Credits Menu in Unreal Engine 5 - YouTube, s.d.), This video is really simple to follow along as It's short and minimal if any key shortcuts were used in this video. This means you could pause and run it though step by step without getting confused.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IWGujvx6sSg?si=4g9mVGs0458e2IcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Figure 5** Show a video by Ryan Laley, This video shows a great explanation of how to use the exponential Height Fog in a gameplay scene. Alongside a great demonstration on how to condense the fog into volumetric fog to add to specific sections of a scene.
+**Figure 5** Show a video by Ryan Laley (How to... Localized Volumetric Fog in Unreal Engine 5, 2023), This video shows a great explanation of how to use the exponential Height Fog in a gameplay scene. Alongside a great demonstration on how to condense the fog into volumetric fog to add to specific sections of a scene.
+
+## Game Source
+For my game source I decided to look into Murdered: Soul suspect (Murdered: Soul Suspect on Steam, s.d.). This game was released in June 2014. It is a fictionalized version of Salem, where you play as a police detective who is killed while trying to uncover the identity and location of the Bell Killer — the main serial killer in the game. The narrative is heavily focused on discovering events from the past and reviving lost memories.
+
+I thought this game was a great reference point for what we aimed to create in our own game. Our story centers around a robber who dies during a bank heist. As a ghost, he must uncover what happened to him.
+
+While Murdered: Soul Suspect is rooted in a murder mystery, its theme of a ghost uncovering their past or future closely resembles the concept we tried to implement. That’s why I chose to further research this game.
+
+
 
 # Documentation
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/board/SxHdyVhqr9e1dBLdS63STh/Interactive-Narratives?node-id=0-1&embed-host=share" allowfullscreen></iframe>
@@ -50,13 +59,13 @@ I researched into how to manipulate fog in a wild setting I used the video how t
 ## Implementation
 
 ### Door System
-<iframe src="https://blueprintue.com/render/msuceinn/" scrolling="no" allowfullscreen></iframe>
+<iframe width="600" height="600" src="https://blueprintue.com/render/msuceinn/" scrolling="no" allowfullscreen></iframe>
 
 **Figure 7** Shows the blueprint of my one-way door system.
-<iframe src="https://blueprintue.com/render/8pate1o5/" scrolling="no" allowfullscreen></iframe>
+<iframe width="600" height="600" src="https://blueprintue.com/render/8pate1o5/" scrolling="no" allowfullscreen></iframe>
 
 **Figure 8** Shows my standard door interaction system that allows the player to explore the bank.
-<iframe src="https://blueprintue.com/render/fuupuosm/" scrolling="no" allowfullscreen></iframe>
+<iframe width="600" height="600" src="https://blueprintue.com/render/fuupuosm/" scrolling="no" allowfullscreen></iframe>
 
 **Figure 9** Shows the locking system I added to the player interact
 
@@ -78,7 +87,7 @@ The third door is a one-way door that automatically locks behind the player. It 
 
 ### End credits/main menu
 
-<iframe src="https://blueprintue.com/render/-xyj2r7u/" scrolling="no" allowfullscreen></iframe>
+<iframe width="600" height="600" src="https://blueprintue.com/render/-xyj2r7u/" scrolling="no" allowfullscreen></iframe>
 
 **Figure 11** Shows the process of how I  got the widget animation to play.
 
@@ -96,7 +105,7 @@ Overall, I’m very happy with how the end credit sequence turned out.
 
 
 ### Player flying limitations
-<iframe src="https://blueprintue.com/render/it5f3jlb/" scrolling="no" allowfullscreen></iframe>
+<iframe width="600" height="600" src="https://blueprintue.com/render/it5f3jlb/" scrolling="no" allowfullscreen></iframe>
 
 **Figure 13** Shows how I got the flying mechanic to work while only within the trigger box and how the player falls when they go to high.
 
@@ -124,7 +133,7 @@ ensuring they remained within the intended vertical limits of the play area.
 **Figure 14** Shows the cut off point when the character flys to high.
 
 ### Fog
-<iframe src="https://blueprintue.com/render/dx1fflpa/" scrolling="no" allowfullscreen></iframe>
+<iframe width="600" height="600" src="https://blueprintue.com/render/dx1fflpa/" scrolling="no" allowfullscreen></iframe>
 
 **Figure 15** Shows the volumetric fog material I created.
 
@@ -137,11 +146,11 @@ For all of the systems mentioned above, I decided to go with a simple yet optimi
 
 ## Outcome and critical reflection
 
-[Gameplay Showcase](https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley)
+[Gameplay Showcase](https://youtu.be/4QdSuAS7i10?si=e-mLcFqxbVwRJyVi)
 
 [Git Repository](https://github.com/C6WX/Group-8)
 
-[Gameplay](https://samperson.itch.io/desktop-goose)
+[Gameplay](https://lunarlynx-games.itch.io/grave-robbing)
 
 ### What went well
 Overall, I believe the systems I produced worked efficiently for their intended purpose. I also felt that they fit the scene well and contributed to completing the final game by adding a layer of interaction and immersion to the final product. I’m happy with everything I completed, as it allowed me to learn new mechanics and explore new nodes.
@@ -163,12 +172,12 @@ One particularly frustrating issue involved the one-way door script. Even though
 Next time, I will make more of an effort to ensure my voice is heard within the group. I feel that I could have been more assertive, though at times I may have come across as too pushy with my ideas. In the future, I’ll aim to strike a better balance by being confidently assertive without overwhelming others. Additionally, I’ll work on not letting group dynamics affect my motivation. Regardless of the situation, I want to stay focused and strive to produce work that reflects my true capabilities—and beyond. I've learned a lot from this group experience, and I will carry these lessons into future projects as I continue to grow and improve my skills
 
 ## Bibliography
-- How To Create A Door Which Locks Behind The Player | Horror Door - Unreal Engine 5 Tutorial (2022) At: https://www.youtube.com/watch?v=Futs4Jh8glA (Accessed  21/05/2025).
-- How to Make a Credits Menu in Unreal Engine 5 (2023) At: https://www.youtube.com/watch?v=LmLjLQbyq-4 (Accessed  21/05/2025).
-- How To Make Keycard Doors | Unreal Engine 5 Tutorial (2024) At: https://www.youtube.com/watch?v=d6PEmrdtUjM (Accessed  21/05/2025).
-- Learn How to Open and Close Doors in Unreal Engine 5 (2022) At: https://www.youtube.com/watch?v=O7vmp73ue4Y (Accessed  21/05/2025).
-- How to... Localized Volumetric Fog in Unreal Engine 5 (2023) At: https://www.youtube.com/watch?v=IWGujvx6sSg (Accessed  22/05/2025).
-
+- Murdered: Soul Suspect on Steam (s.d.) At: [https://store.steampowered.com/app/233290/Murdered_Soul_Suspect/](https://store.steampowered.com/app/233290/Murdered_Soul_Suspect/) (Accessed  22/05/2025).
+- How To Create A Door Which Locks Behind The Player | Horror Door - Unreal Engine 5 Tutorial (2022) At: [https://www.youtube.com/watch?v=Futs4Jh8glA](https://www.youtube.com/watch?v=Futs4Jh8glA) (Accessed  21/05/2025).
+- How to Make a Credits Menu in Unreal Engine 5 (2023) At: [https://www.youtube.com/watch?v=LmLjLQbyq-4](https://www.youtube.com/watch?v=LmLjLQbyq-4) (Accessed  21/05/2025).
+- How To Make Keycard Doors | Unreal Engine 5 Tutorial (2024) At: [https://www.youtube.com/watch?v=d6PEmrdtUjM](https://www.youtube.com/watch?v=d6PEmrdtUjM) (Accessed  21/05/2025).
+- Learn How to Open and Close Doors in Unreal Engine 5 (2022) At: [https://www.youtube.com/watch?v=O7vmp73ue4Y](https://www.youtube.com/watch?v=O7vmp73ue4Y) (Accessed  21/05/2025).
+- How to... Localized Volumetric Fog in Unreal Engine 5 (2023) At: [https://www.youtube.com/watch?v=IWGujvx6sSg](https://www.youtube.com/watch?v=IWGujvx6sSg) (Accessed  22/05/2025).
 
 ## Declared Assets
 Font was made by Morgan Flaherty 2402419
