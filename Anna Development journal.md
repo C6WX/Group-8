@@ -15,6 +15,7 @@ For this game I researched into door mechanics so the player can access certain 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Futs4Jh8glA?si=-xGHWT5rd9unFkim" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LmLjLQbyq-4?si=LhZtUawPlAJ7oGfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IWGujvx6sSg?si=4g9mVGs0458e2IcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Documentation
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/board/SxHdyVhqr9e1dBLdS63STh/Interactive-Narratives?node-id=0-1&embed-host=share" allowfullscreen></iframe>
@@ -27,7 +28,6 @@ For this game I researched into door mechanics so the player can access certain 
 <iframe src="https://blueprintue.com/render/fuupuosm/" scrolling="no" allowfullscreen></iframe>
 
 ![ezgif com-video-to-gif-converter (2)](https://github.com/user-attachments/assets/5497cabc-b095-4c0b-bc92-fbcecc11728d)
-![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/95497ec2-564e-49cc-a343-ebd9ad2ce32e)
 
 
 ### End credits/main menu
@@ -36,11 +36,14 @@ For this game I researched into door mechanics so the player can access certain 
 
 ![ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/e9183c24-429c-497d-9c89-50f26b277b3b)
 
-![MainMenu-ezgif com-webp-to-png-converter](https://github.com/user-attachments/assets/9fbbdddd-5e73-4a7d-b7c5-f1d57060844f)
 
+### Player flying limitations
+<iframe src="https://blueprintue.com/render/it5f3jlb/" scrolling="no" allowfullscreen></iframe>
 
 ### What was the process of completing the task? What influenced your decision making?
 
+### Fog
+<iframe src="https://blueprintue.com/render/dx1fflpa/" scrolling="no" allowfullscreen></iframe>
 
 ## Outcome
 
