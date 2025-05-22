@@ -47,7 +47,7 @@ For my game source I decided to look into Murdered: Soul suspect (Murdered: Soul
 
 I thought this game was a great reference point for what we aimed to create in our own game. Our story centers around a robber who dies during a bank heist. As a ghost, he must uncover what happened to him.
 
-While Murdered: Soul Suspect is rooted in a murder mystery, its theme of a ghost uncovering their past or future closely resembles the concept we tried to implement. That’s why I chose to further research this game.
+While Murdered: Soul Suspect (Murdered: Soul Suspect on Steam, s.d.) is rooted in a murder mystery, its theme of a ghost uncovering their past or future closely resembles the concept we tried to implement. That’s why I chose to further research this game.
 
 
 

@@ -1,11 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [['$','$'], ['\\(','\\)']]}});</script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS": {"availableFonts":["TeX"],"scale": 150}});</script>
 
-		<head>
-			<style type="text/css" media="screen">
-				body,html{font-family:var(--markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", system-ui, "Ubuntu", "Droid Sans", sans-serif);font-size:var(--markdown-font-size,14px);padding:0 26px;line-height:var(--markdown-line-height,22px);word-wrap:break-word}body{padding-top:1em}h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}h2,h3,h4,h5,h6{font-weight:400;margin-bottom:.2em}img{max-width:100%;max-height:100%}a{text-decoration:none}a:hover{text-decoration:underline}a:focus,input:focus,select:focus,textarea:focus{outline:1px solid -webkit-focus-ring-color;outline-offset:-1px}p{margin-bottom:.7em}ol,ul{margin-bottom:.7em}hr{border:0;height:2px;border-bottom:2px solid}h1{padding-bottom:.3em;line-height:1.2;border-bottom-width:1px;border-bottom-style:solid;font-weight:400}table{border-collapse:collapse}th{text-align:left;border-bottom:1px solid}td,th{padding:5px 10px}table>tbody>tr+tr>td{border-top:1px solid}blockquote{margin:0 7px 0 5px;padding:0 16px 0 10px;border-left-width:5px;border-left-style:solid}code{font-family:var(--vscode-editor-font-family, "SF Mono", Monaco, Menlo, Consolas, "Ubuntu Mono", "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace);font-size:1em;line-height:1.357em}body.wordWrap pre{white-space:pre-wrap}pre.hljs code>div,pre:not(.hljs){padding:16px;border-radius:3px;overflow:auto}pre code{color:var(--vscode-editor-foreground);tab-size:4}
-			</style>
-		</head>
-		<body>
-			<h1 id="fgct4007-interactive-narratives-2425">FGCT4007: Interactive Narratives 24/25</h1>
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+</style>
+
+</head>
+<body>
+<h1 id="fgct4007-interactive-narratives-2425">FGCT4007: Interactive Narratives 24/25</h1>
 <p>Anna Rogers</p>
 <p>2315276</p>
 <h2 id="research">Research</h2>
@@ -16,67 +388,59 @@
 <p>For the end credits, I referred back to a video I had previously used and expanded upon it to enhance the end credits scene (How to Make a Credits Menu in Unreal Engine 5 - YouTube, s.d.). I used the basic animation logic provided in the video to add fade-ins and additional movement mechanics, improving the overall player experience. The video was especially helpful for anyone looking to create an end credits sequence, as it provided a simple foundation that was easy to build upon and adapt to fit our gameplay.</p>
 <p>I researched into how to manipulate fog in a wild setting I used the video how to localise volumetric fog in Unreal Engine 5 from Ryan Laley (How to... Localized Volumetric Fog in Unreal Engine 5, 2023) this video went into depth about the basic settings of the exponential height fog something which I have not touched previously in any of my other projects it was very helpful for him to go through the settings and how to disperse the fog or condense it as well as change the opacity I wanted my fog to be quite dense and thick so I was able to do that with the help of the video I then moved what I had learned about the exponential height fog into a volumetric material all of this was very well explained by the YouTube creator and I highly recommend his videos</p>
 <h4 id="sources">Sources</h4>
-<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p><strong>Figure 1</strong> Shows the video made by Gorka Games (Learn How to Open and Close Doors in Unreal Engine 5 - YouTube, s.d.), this video I didn&#39;t find particularly useful as the lack of explanation made it very hard to follow along with what was happening within the video. I wouldn&#39;t recommend using this video.</p>
-<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O7vmp73ue4Y?si=187gZ8scv8TxHz20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><strong>Figure 1</strong> Shows the video made by Gorka Games (Learn How to Open and Close Doors in Unreal Engine 5 - YouTube, s.d.), this video I didn't find particularly useful as the lack of explanation made it very hard to follow along with what was happening within the video. I wouldn't recommend using this video.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d6PEmrdtUjM?si=v70UWlcKxXZ07AAK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p><strong>Figure 2</strong> Shows the video made by FCB Dev (How To Make Keycard Doors | Unreal Engine 5 Tutorial - YouTube, s.d.), This was an extremely useful video as he explains things in a way I found very helpful. Everything was clear and easy to understand. I would recommend this video to people.</p>
-<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p><strong>Figure 3</strong> Shows a video by Matt Asplaned (How To Create A Door Which Locks Behind The Player | Horror Door - Unreal Engine 5 Tutorial - YouTube, s.d.), this video helped me start on my one way door system. While I didn&#39;t use the whole video what I did watch and use helped me to create my smooth door system.</p>
-<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p><strong>Figure 4</strong> Shows a video my Gorka Games (How to Make a Credits Menu in Unreal Engine 5 - YouTube, s.d.), This video is really simple to follow along as It&#39;s short and minimal if any key shortcuts were used in this video. This means you could pause and run it though step by step without getting confused.</p>
-<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Futs4Jh8glA?si=-xGHWT5rd9unFkim" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><strong>Figure 3</strong> Shows a video by Matt Asplaned (How To Create A Door Which Locks Behind The Player | Horror Door - Unreal Engine 5 Tutorial - YouTube, s.d.), this video helped me start on my one way door system. While I didn't use the whole video what I did watch and use helped me to create my smooth door system.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LmLjLQbyq-4?si=LhZtUawPlAJ7oGfY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p><strong>Figure 4</strong> Shows a video my Gorka Games (How to Make a Credits Menu in Unreal Engine 5 - YouTube, s.d.), This video is really simple to follow along as It's short and minimal if any key shortcuts were used in this video. This means you could pause and run it though step by step without getting confused.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IWGujvx6sSg?si=4g9mVGs0458e2IcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p><strong>Figure 5</strong> Show a video by Ryan Laley (How to... Localized Volumetric Fog in Unreal Engine 5, 2023), This video shows a great explanation of how to use the exponential Height Fog in a gameplay scene. Alongside a great demonstration on how to condense the fog into volumetric fog to add to specific sections of a scene.</p>
 <h2 id="game-source">Game Source</h2>
 <p>For my game source I decided to look into Murdered: Soul suspect (Murdered: Soul Suspect on Steam, s.d.). This game was released in June 2014. It is a fictionalized version of Salem, where you play as a police detective who is killed while trying to uncover the identity and location of the Bell Killer — the main serial killer in the game. The narrative is heavily focused on discovering events from the past and reviving lost memories.</p>
 <p>I thought this game was a great reference point for what we aimed to create in our own game. Our story centers around a robber who dies during a bank heist. As a ghost, he must uncover what happened to him.</p>
 <p>While Murdered: Soul Suspect (Murdered: Soul Suspect on Steam, s.d.) is rooted in a murder mystery, its theme of a ghost uncovering their past or future closely resembles the concept we tried to implement. That’s why I chose to further research this game.</p>
 <h1 id="documentation">Documentation</h1>
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="" allowfullscreen></iframe>
-
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/board/SxHdyVhqr9e1dBLdS63STh/Interactive-Narratives?node-id=0-1&amp;embed-host=share" allowfullscreen></iframe>
 <p><strong>Figure 6</strong> Above, I have provided the Figma table that was used by the entire group. It served as a useful reference for tracking what had been completed and what still needed to be done. It also helped me stay up to date with my own tasks, as I could easily tick off items once they were finished. Additionally, it allowed me to see where I might be able to offer help, especially to other groups—such as the animation team—who were struggling a bit more. I offered assistance whenever I could.</p>
 <h2 id="implementation">Implementation</h2>
 <h3 id="door-system">Door System</h3>
-<iframe width="600" height="600" src="" scrolling="no" allowfullscreen></iframe>
-
+<iframe width="600" height="600" src="https://blueprintue.com/render/msuceinn/" scrolling="no" allowfullscreen></iframe>
 <p><strong>Figure 7</strong> Shows the blueprint of my one-way door system.</p>
-<iframe width="600" height="600" src="" scrolling="no" allowfullscreen></iframe>
-
+<iframe width="600" height="600" src="https://blueprintue.com/render/8pate1o5/" scrolling="no" allowfullscreen></iframe>
 <p><strong>Figure 8</strong> Shows my standard door interaction system that allows the player to explore the bank.</p>
-<iframe width="600" height="600" src="" scrolling="no" allowfullscreen></iframe>
-
+<iframe width="600" height="600" src="https://blueprintue.com/render/fuupuosm/" scrolling="no" allowfullscreen></iframe>
 <p><strong>Figure 9</strong> Shows the locking system I added to the player interact</p>
 <p>I created three door prefabs for the game, each with a different purpose and functionality.</p>
 <ul>
-<li><p>Two-Way Interactable Door:
+<li>
+<p>Two-Way Interactable Door:
 The first door needed to open in both directions and be fully interactable, allowing the player to move freely through the scene. To achieve this, I used a FlipFlop node connected to a Timeline with a curve ranging from 0 to 1. This was linked to a Set Relative Rotation node, where the target rotation was controlled by a Lerp function—A was 0 and B was -100. This setup enabled the door to smoothly open. The FlipFlop allowed the door to reverse the animation, meaning it could open and close interactively. Initially, I used a pre-made interact function, but this was later replaced with a Custom Event. The change was made to allow for more control, particularly to support locked doors.</p>
 </li>
-<li><p>Locked Door System:
+<li>
+<p>Locked Door System:
 For the locked doors, we extended the interaction system in both the player blueprint and the door prefab. When the player interacts with a door, the system checks whether a boolean variable is set to true (unlocked) or false (locked). This allowed us to lock specific doors—such as the final door in the game—preventing the player from skipping ahead or speedrunning the ending.</p>
 </li>
-<li><p>One-Way Door That Locks Behind:
+<li>
+<p>One-Way Door That Locks Behind:
 The third door is a one-way door that automatically locks behind the player. It uses the same base setup as the first door, but with the addition of a Do Once node. When the player enters a trigger box, the sequence is activated and the door shuts behind them. Because of the Do Once node, the door is no longer interactable afterward—meaning the player cannot reopen it. This behavior was intentional, as it prevents the player from backtracking.</p>
 </li>
 </ul>
-<p><img src="" alt="ezgif com-video-to-gif-converter (2)"></p>
+<p><img src="https://github.com/user-attachments/assets/5497cabc-b095-4c0b-bc92-fbcecc11728d" alt="ezgif com-video-to-gif-converter (2)"></p>
 <p><strong>Figure 10</strong> Shows the One way door system locking behind the player when they enter the bank.</p>
 <h3 id="end-creditsmain-menu">End credits/main menu</h3>
-<iframe width="600" height="600" src="" scrolling="no" allowfullscreen></iframe>
-
+<iframe width="600" height="600" src="https://blueprintue.com/render/-xyj2r7u/" scrolling="no" allowfullscreen></iframe>
 <p><strong>Figure 11</strong> Shows the process of how I  got the widget animation to play.</p>
 <p>For the end credits, I used the Animation section in the Widget Blueprint. This allowed me to reference each individual tag that I had created in the widget. This was great because it meant I could animate individual parts. When using two different text sizes, I didn’t need to use two separate text boxes. However, it can be difficult to line up the animation so it runs without overlapping. I encountered this issue on several occasions and had to carefully adjust the Y-axis to ensure everything lined up properly.</p>
 <p>I also added a fade-in effect so the screen transitions from the game view to black, and then the credits begin to roll. I felt this made the sequence look more polished and professional. At the end of the credits, a “Thank you for playing” message appears. After this, our group’s custom company logo is shown. Once the logo disappears from the screen, a button appears that leads the player back to the main menu.</p>
 <p>This button was implemented using a method similar to the fade-in. I created a short animation that gradually changed the button’s opacity from 0 to 1 over a few seconds. I used an Event Construct to play the animation, referenced it in the Blueprint, and originally linked it to a collision box. Later, it was updated so that when the van hits the player, the end credits sequence automatically begins.</p>
 <p>Overall, I’m very happy with how the end credit sequence turned out.</p>
-<p><img src="" alt="ezgif com-video-to-gif-converter"></p>
+<p><img src="https://github.com/user-attachments/assets/e9183c24-429c-497d-9c89-50f26b277b3b" alt="ezgif com-video-to-gif-converter"></p>
 <p><strong>Figure 12</strong> Shows how my end credits scene runs after the player gets hit by the car.</p>
 <h3 id="player-flying-limitations">Player flying limitations</h3>
-<iframe width="600" height="600" src="" scrolling="no" allowfullscreen></iframe>
-
+<iframe width="600" height="600" src="https://blueprintue.com/render/it5f3jlb/" scrolling="no" allowfullscreen></iframe>
 <p><strong>Figure 13</strong> Shows how I got the flying mechanic to work while only within the trigger box and how the player falls when they go to high.</p>
 <p>Our animator created a flying system based on a custom animation she developed. While the feature worked
 well, it had some issues—players could fly too high and access areas of the map we didn’t intend them to. This
@@ -91,11 +455,10 @@ to the Box Collider Blueprint. I then created On Component Begin Overlap and End
 <p>When the player exits the Box Collider (End Overlap), the boolean is set to false, disabling flight.​</p>
 <p>Additionally, if the player flew too high, the system would immediately force them back down to the ground,
 ensuring they remained within the intended vertical limits of the play area.</p>
-<p><img src="" alt="Flyinganimation-ezgif com-video-to-gif-converter"></p>
+<p><img src="https://github.com/user-attachments/assets/6452ea33-4e46-4791-926f-7add30953dd4" alt="Flyinganimation-ezgif com-video-to-gif-converter"></p>
 <p><strong>Figure 14</strong> Shows the cut off point when the character flys to high.</p>
 <h3 id="fog">Fog</h3>
-<iframe width="600" height="600" src="" scrolling="no" allowfullscreen></iframe>
-
+<iframe width="600" height="600" src="https://blueprintue.com/render/dx1fflpa/" scrolling="no" allowfullscreen></iframe>
 <p><strong>Figure 15</strong> Shows the volumetric fog material I created.</p>
 <p>Towards the end of this project, I looked for ways to enhance the overall player experience. At the start of the game, the player would see a white void, which felt unpolished and broke immersion. To fix this, I added a fog feature that surrounds the player’s spawn area. This not only improved the visual experience but also served as an optimization technique. Without the fog, we would have had to duplicate the original world, which we wanted to avoid for performance reasons. The fog effectively hides the void and enhances immersion.</p>
 <p>To achieve this, I enabled exponential Height Fog and created a custom material that generated volumetric fog, producing a dense fog wall. I then used this fog to surround the lower sections of the world, enclosing the area and masking the visible void completely.</p>
@@ -107,14 +470,14 @@ ensuring they remained within the intended vertical limits of the play area.</p>
 <p><a href="https://lunarlynx-games.itch.io/grave-robbing">Gameplay</a></p>
 <h3 id="what-went-well">What went well</h3>
 <p>Overall, I believe the systems I produced worked efficiently for their intended purpose. I also felt that they fit the scene well and contributed to completing the final game by adding a layer of interaction and immersion to the final product. I’m happy with everything I completed, as it allowed me to learn new mechanics and explore new nodes.</p>
-<h3 id="what-didnt-go-well">What didn&#39;t go well</h3>
+<h3 id="what-didnt-go-well">What didn't go well</h3>
 <p>I felt that, within this project, my voice wasn’t properly heard. There were several instances where I advised against certain decisions because I believed they could lead to issues—and, unfortunately, they did. One example was when I suggested shortening the game. Instead of discussing it, someone else spoke over me and insisted on keeping a set number of endings, even though this decision didn’t come from our project lead.</p>
 <p>Another concern I raised was about the playable character. I believed the original character (that was made by one of out artists) design didn’t suit the scene, both in terms of scale and navigation. It took me and several other group members considerable effort to convince the person responsible to adjust the character’s shape so it would fit better and move more smoothly around the environment.</p>
 <p>Unfortunately, my concerns and suggestions were often overlooked—even when they aligned with issues that the teacher also warned could be problematic. This led to a growing lack of motivation on my part to contribute beyond my assigned tasks. While I did complete everything I committed to, I believe I could have done much more if I’d felt heard and supported, and if the group had been managed differently. I know my capabilities go beyond what I delivered, and although I’m proud of what I achieved, I’m disappointed I didn’t push myself further.</p>
 <p>In addition to these communication issues, I faced technical challenges with GitHub and Blueprinting. The Git LFS (Large File Storage) wasn’t set up properly, and the folder structure was incorrect, which caused numerous merge conflicts. For my gameplay section—specifically the door systems—the blueprints wouldn’t transfer properly across branches. As a result, I had to recreate them from scratch. Unfortunately, once recreated, the blueprints no longer worked as expected, and I had to troubleshoot them again.</p>
 <p>One particularly frustrating issue involved the one-way door script. Even though I had previously built and tested the system successfully (with help from Sam), it suddenly stopped working when implemented in a new branch. This was confusing, as it was the exact same script we had used earlier. Despite these setbacks, we eventually resolved the scripting issues. During this time, while GitHub was still causing problems, we figured out what was wrong and found a more effective way to manage our version control.</p>
 <h3 id="what-would-you-do-differently-next-time">What would you do differently next time?</h3>
-<p>Next time, I will make more of an effort to ensure my voice is heard within the group. I feel that I could have been more assertive, though at times I may have come across as too pushy with my ideas. In the future, I’ll aim to strike a better balance by being confidently assertive without overwhelming others. Additionally, I’ll work on not letting group dynamics affect my motivation. Regardless of the situation, I want to stay focused and strive to produce work that reflects my true capabilities—and beyond. I&#39;ve learned a lot from this group experience, and I will carry these lessons into future projects as I continue to grow and improve my skills</p>
+<p>Next time, I will make more of an effort to ensure my voice is heard within the group. I feel that I could have been more assertive, though at times I may have come across as too pushy with my ideas. In the future, I’ll aim to strike a better balance by being confidently assertive without overwhelming others. Additionally, I’ll work on not letting group dynamics affect my motivation. Regardless of the situation, I want to stay focused and strive to produce work that reflects my true capabilities—and beyond. I've learned a lot from this group experience, and I will carry these lessons into future projects as I continue to grow and improve my skills</p>
 <h2 id="bibliography">Bibliography</h2>
 <ul>
 <li>Murdered: Soul Suspect on Steam (s.d.) At: <a href="https://store.steampowered.com/app/233290/Murdered_Soul_Suspect/">https://store.steampowered.com/app/233290/Murdered_Soul_Suspect/</a> (Accessed  22/05/2025).</li>
@@ -127,4 +490,5 @@ ensuring they remained within the intended vertical limits of the play area.</p>
 <h2 id="declared-assets">Declared Assets</h2>
 <p>Font was made by Morgan Flaherty 2402419</p>
 
-		</body>
+</body>
+</html>
