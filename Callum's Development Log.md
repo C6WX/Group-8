@@ -180,6 +180,7 @@ The main problem that I had to deal with when creating this UI was the format te
 <br>
 The main problem I had with making this game feature was finding which method works best to make the van move. The first thing I tried was using Move to location, which didn't work as the actor needed an AI controller. After adding an AI controller, it still didn't work, so I tried using a nav mesh, but that didn't work due to the scene getting in the way at random points. The last thing I tried was using a sequence that plays when the player is in the right position, which worked and was the method I used to make the van move for the game.
 
+
 ### What creative or technical approaches did you use or try, and how did this contribute to the outcome?
 
 A technical approach I took for this project was thinking more about optimisation of the game due to the high number of assets which will be in the scene, and this led me to create the settings menu, which is something I have never done before. The settings menu ended up working well, with a few bugs here and there that are mostly fixed. The settings menu has all the standard optimisation settings such as window mode, resolution, vsync, e.t.c.
@@ -189,7 +190,7 @@ One technical difficulty I faced during development was an error that occurred w
 
 ## Outcome
 
-- [Video Link]()
+- [Video Link](https://youtu.be/4QdSuAS7i10?si=e-mLcFqxbVwRJyVi)
 - [Repo Link](https://github.com/C6WX/Group-8)
 - [Itch.io Link](https://lunarlynx-games.itch.io/grave-robbing)
 
