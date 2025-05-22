@@ -5,6 +5,17 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Scene.umap",
+				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Demonstration.umap",
+				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/MainMenu.umap",
+				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Static/UIs/MainMenu_UI.uasset",
+				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Static/Fonts/upheavtt.uasset",
+				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Static/Fonts/upheavtt_Font.uasset",
+				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Static/UIs/pixel-art-rural-landscape-background_23-2150592960.uasset",
+				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/Levels/MenuGamemode_BP.uasset",
+				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/Interaction/BP_EndingDoor.uasset",
+				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/Interaction/BP_FlyZone.uasset",
+				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/Core/MC/BP_MainCharacter.uasset",
 				"C:/Users/2404781/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/UI/WBP_Settings.uasset",
 				"C:/Users/2404781/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/Core/MC/BP_ThirdPersonCharacter.uasset",
 				"C:/Users/2404781/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Scene.umap",
@@ -900,15 +911,7 @@
 				"C:/Users/2402795/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/LittleFellow/standardSurface2.uasset",
 				"C:/Users/2402795/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Scene.umap",
 				"C:/Users/2404781/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/Interactions/BP_TellerBadge.uasset",
-				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Scene.umap",
-				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Demonstration.umap",
-				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/MainMenu.umap",
-				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Static/UIs/MainMenu_UI.uasset",
-				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Static/Fonts/upheavtt.uasset",
-				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Static/Fonts/upheavtt_Font.uasset",
-				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Static/UIs/pixel-art-rural-landscape-background_23-2150592960.uasset",
 				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Static/UIs/EndCredits_UI.uasset",
-				"C:/Users/Freddie/Documents/GitHub/Group-8/FGCT4007Framework/Content/Dynamic/Blueprints/Levels/MenuGamemode_BP.uasset",
 				"D:/FGCT4007Framework/FGCT4007Framework/Content/Dynamic/AssetsvilleTown/Maps/Demonstration.umap"
 			]
 		}
