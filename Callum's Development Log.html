@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Callum's Development Log.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="group-8">Group-8</h1>
+<p>Callum Wade</p>
+<p>2404781</p>
+<h2 id="research">Research</h2>
+<p>One of the first things that I wanted to create for this game is a pause menu. As it had been quite a while since I last created a pause menu, I watched a video on creating one (How to Make a Simple Pause Menu in Unreal Engine 5 - Beginner Tutorial, 2022). This tutorial was very quick and very helpful, as it was straight to the point and touched on everything I needed for my game. Watching this tutorial helped me create a pause menu with a resume button, a pause button and a quit button.</p>
+<p>After creating the pause menu, I went on to research how to create a settings menu, as this is something I have never done before. Researching this led me to another YouTube video (Simple Options Menu In Unreal UE5.2, 2023). This video was also quick and straight to the point, and it helped me to add more features than I thought I would want in the game. However, after following the tutorial, lots of bugs were present within the script, which meant that lots of debugging and tweaking were required.</p>
+<p>The last YouTube video that I watched to help me create this game was a video on creating teleporters (How To Create A Teleporter - Unreal Engine 5 Tutorial, 2021). I needed teleporters in the game to move the player between the two different banks. The video was very short and very basic, meaning it only touched on the basics of using and creating teleporters, but it was enough to allow me to create my own teleporters for the game.</p>
+<h2 id="game-source">Game Source</h2>
+<p>Cyberpunk 2077 is a 2020 action role-playing game developed by CD Projekt Red. One of the mechanics featured in the game is brain dances, which is similar to how our characters go back in time to relive memories (Cyberpunk 2077, 2020).</p>
+<p>The brain dances in cyberpunk have many features that aren't similar to our game, as it is more of a detective mode than what happens in Grave Robbing. But the main similarity and reason that I looked into cyberpunk for inspiration was down to the game mechanic allowing you to see what happened in the past which is quite similar to what happens in our game, aside from the fact that you have to teleport to the flashback location instead of switching between present and past in real time.</p>
+<p>I find their use of the mechanic to be a great fit in the world of cyberpunk. However, it wouldn't fit well into Grave Robbing as their use of the mechanics is more serious and more for detective work.</p>
+<h2 id="implementation">Implementation</h2>
+<p>The first part of the game that I developed was the pause menu.
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/iob4ens6/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 1. The script used to create the pause menu.</em>
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/-4969-g2/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 2. The script on the player that displays the pause menu and manages the controls when esc is pressed</em>
+<br>
+<br>
+For the pause menu, I programmed a script that displays the pause menu when esc is pressed. The menu consists of three buttons. The Resume button unlocks the player's controls and hides the pause menu, the settings button displays the settings menu and the quit button closes the game.
+<br>
+<br>
+After the pause menu, I then created the settings menu to better optimise the game.
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/47s-o-b-/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 3. The script used to display the settings menu and save the players settings.</em>
+<br>
+<br>
+The settings menu allows the player to control the window mode, resolution, shadow quality, texture quality, shader quality, anti-aliasing, vsync and the frame rate cap of the game. As well as this, the settings that the player sets it to will be saved by the script.
+<br>
+<br>
+Once the menus were complete, I started working on implementing the dialogue system onto the NPCs.
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/-qkws9ty/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 4. Bain's dialogue system that checks if the player has spoke to Bain so that they can't accidentally speak to him again.</em>
+<br>
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/6hto92om/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 5. Kylie's dialogue script checks if the player has stolen enough cash before Kylie can start the conversation, this is done so that the player can have the choice to keep stealing or not. Also, this script adds the tags &quot;left early&quot; or &quot;Continued stealing&quot; based on the player's choice.</em>
+<br>
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/v-0zp50f/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 6. The hostage's dialogue system that starts the dialogue when interacted with, adds the tags &quot;HostagePhoneLeft&quot; or &quot;HostagePhoneTaken&quot; based on the player's choice and also teleports the hostage to the police station based on the player's tags.</em>
+<br>
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/ttlupyzx/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 7. The Teller's dialogue system that starts the conversation when the player interacts with the teller and then, based on the outcome of the conversation, will add the tags &quot;KillerTeller&quot;, &quot;LeftTellerAlive&quot;, &quot;LeftKylieToKillTeller&quot;, &quot;Intervened&quot; and &quot;PersuadedKylie&quot;.</em>
+<br>
+<br>
+As the dialogue system is the main feature of the game, it is what took most of my time to create and is what most scripts focus on. The dialogue system uses data tables and tags to determine what the next line is going to be and what tags are given to the player.
+<br>
+<br>
+The next thing I added to the game was NPC teleportation so that the NPCs can get around the bank without having to have multiple of the same character.
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/7mtde_18/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 8. When the player uses certain teleporters, the NPCs teleport locations are changed, and then their teleport event is triggered.</em>
+<br>
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/st1v0lay/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 9. Bain's teleport event.</em>
+<br>
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/ii63jkh-/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 10. Kylie's teleport event.</em>
+<br>
+<br></p>
+<p>When creating NPC teleportation, there were a few problems with the vault teleportation, which ended up taking up lots of time, but I managed to fix it and now the NPCs teleport properly and at the right time.
+<br>
+<br>
+Once the NPC teleporters were done, I made the player teleporters.
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/ou-z3n78/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 11. Ghost Teleporter 2 teleports the player to the main vault hallway if they have used the first ghost teleporter.</em>
+<br>
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/6kne5urq/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 12. Ghost Teleporter 3 teleports the player to the end door in the main bank if they have used Ghost Teleporter 2.</em>
+<br>
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/i70foe95/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 13. Main Teleporter 1 teleports the player back to the ghost vault after they have talked to the teller.</em>
+<br>
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/ose9jxfn/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 14. Main teleporter 2 teleports the player from the main bank to the ghost bank if the player has stolen enough money.</em>
+<br>
+<br>
+The player teleporters worked well, but there is definitely a more efficient way to create them, as I made four different teleporter blueprints.
+<br>
+<br>
+As the game needed more ways for the player to interact, the next thing I added was the ability to grab cash.
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/hd213d_r/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 15. The player can cash out by looking at it and clicking. If the player leaves the vault early, they can no longer grab cash, as they will have the tag that the script checks for. Whenever cash is stolen, the player's cash variable is increased by 1000.</em>
+<br>
+<br>
+The cash script ended up working perfectly, apart from the fact that the shelves in the vault block the raycasts from reaching the cash, so the shelves have to be changed.
+<br>
+<br>
+To work alongside the cash script, I created a cash UI blueprint that displays the player's current cash on the top left of the screen.
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/okfbx7bk/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 16. Displays the players cash on the top left of the screen.</em>
+<br>
+<br>
+The main problem that I had to deal with when creating this UI was the format text node, as I have never mixed variables and text before, leading me to research different nodes.
+<br>
+<br>
+The main problem that I had to deal with when creating this UI was the format text node, as I had never mixed variables and text before, leading me to research different nodes.
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/-3-a75fz/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 17. This blueprint disables the player's movement and turns them to the left to face the van's direction before playing the van sequence.</em>
+<br>
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/mmxgx6dt/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 18. When the van collides with the player, this script runs to run a custom event on the player character.</em>
+<br>
+<br></p>
+<iframe width="600" height="600" src="https://blueprintue.com/render/us83hs7l/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 19. This script enables a play credits variable that the scene script accesses.</em>
+<br>
+<br></p>
+<iframe src="https://blueprintue.com/render/7ayrndxi/" scrolling="no" allowfullscreen></iframe>
+<br>
+<p><em>Figure 20. Adds the credits to the viewport when the play credits variable equals true.</em>
+<br>
+&lt;br
+The main problem I had with making ths game feature was finding which method works best to make the van move. The first thing I tried was using Move to location, which didn't work as the actor needed an AI controller. After adding an AI controller, it still didn't work, so I tried using a nav mesh, but that didn't work due to the scene getting in the way at random points. The last thing I tried was using a sequence that plays when the player is in the right position, which worked and was the method I used to make the van move for the game.</p>
+<h3 id="what-creative-or-technical-approaches-did-you-use-or-try-and-how-did-this-contribute-to-the-outcome">What creative or technical approaches did you use or try, and how did this contribute to the outcome?</h3>
+<p>A technical approach I took for this project was thinking more about optimisation of the game due to the high number of assets which will be in the scene, and this led me to create the settings menu, which is something I have never done before. The settings menu ended up working well, with a few bugs here and there that are mostly fixed. The settings menu has all the standard optimisation settings such as window mode, resolution, vsync, e.t.c.</p>
+<h3 id="did-you-have-any-technical-difficulties-if-so-what-were-they-and-did-you-manage-to-overcome-them">Did you have any technical difficulties? If so, what were they and did you manage to overcome them?</h3>
+<p>One technical difficulty I faced during development was an error that occurred when I was teleporting the NPCs around the bank. To teleport them to the vault, I tried using the scene blueprint so that I could reference where the NPCs should teleport and change multiple variables on different objects at once. However, the error that occurred was due to the script being triggered by the player overlapping with the teleporter, which, after some testing and breakpointing, I realised wasn't being triggered as the player teleported too fast for it to even trigger an overlap event. To overcome this problem, I created an empty volume that the player triggers after teleporting, which triggers the script.</p>
+<h2 id="outcome">Outcome</h2>
+<ul>
+<li><a href="https://youtu.be/4QdSuAS7i10?si=e-mLcFqxbVwRJyVi">Video</a></li>
+<li><a href="https://github.com/C6WX/Group-8">Github</a></li>
+<li><a href="https://lunarlynx-games.itch.io/grave-robbing">Itch.io</a></li>
+<li><a href="https://ucreative.sharepoint.com/:p:/r/sites/UC_24.25_FGCT4007_TeamWorkingFiles/_layouts/15/Doc2.aspx?action=edit&amp;sourcedoc=%7Bc80179b1-ac11-41a4-a3ab-8fcc0d498f00%7D&amp;wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&amp;wdExp=TEAMS-TREATMENT&amp;wdhostclicktime=1747947996380&amp;web=1">ADD</a></li>
+<li><a href="https://ucreative.sharepoint.com/:p:/r/sites/UC_24.25_FGCT4007_TeamWorkingFiles/_layouts/15/Doc2.aspx?action=edit&amp;sourcedoc=%7Bded36632-e701-4089-9aef-cb2da14b8024%7D&amp;wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&amp;wdExp=TEAMS-TREATMENT&amp;wdhostclicktime=1747947998704&amp;web=1">Presentation</a></li>
+</ul>
+<h2 id="critical-reflection">Critical Reflection</h2>
+<h3 id="what-did-or-did-not-work-well-and-why">What did or did not work well and why?</h3>
+<p>One thing that worked well was the dialogue system. After adding a few tweaks to it, the dialogue system was very easy to used and fitted the requirements that were needed from it to create the game.
+<br>
+One thing that didn't work well was the teleporters as there were quite a few errors that occured during development so I ended up just making them using and easier but messier method.</p>
+<h3 id="what-would-you-do-differently-next-time">What would you do differently next time?</h3>
+<p>Next time I would spend more time planning each feature as I feel that each thing works but could be better then it currently is. Also I would spend more time thinking about the amount of interaction the player will have as the player was meant to have lots of interactions within the game but due to time contstraints, not everything that we wished were added, was added to the game.</p>
+<h2 id="bibliography">Bibliography</h2>
+<ul>
+<li>
+<p>How to Make a Simple Pause Menu in Unreal Engine 5 - Beginner Tutorial (2022) At: https://www.youtube.com/watch?v=Yr8beK9FMe0 (Accessed  13/05/2025).</p>
+</li>
+<li>
+<p>Simple Options Menu In Unreal UE5.2 (2023) At: https://www.youtube.com/watch?v=j9OAV7LO3Pg (Accessed  05/05/2025).</p>
+</li>
+<li>
+<p>How To Create A Teleporter - Unreal Engine 5 Tutorial (2021) At: https://www.youtube.com/watch?v=XN6auOm_9ZY (Accessed  05/05/2025).</p>
+</li>
+<li>
+<p>Home of the Cyberpunk 2077 universe — games, anime &amp; more (s.d.) At: https://www.cyberpunk.net/us/en/ (Accessed  21/05/2025).</p>
+</li>
+</ul>
+<h2 id="declared-assets">Declared Assets</h2>
+<p>Asset pack - https://assetsville.com/assetsville-town/</p>
+
+</body>
+</html>

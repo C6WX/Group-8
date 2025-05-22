@@ -177,8 +177,9 @@ The main problem that I had to deal with when creating this UI was the format te
 
 *Figure 20. Adds the credits to the viewport when the play credits variable equals true.*
 <br>
-<br>
-The main problem I had with making this game feature was finding which method works best to make the van move. The first thing I tried was using Move to location, which didn't work as the actor needed an AI controller. After adding an AI controller, it still didn't work, so I tried using a nav mesh, but that didn't work due to the scene getting in the way at random points. The last thing I tried was using a sequence that plays when the player is in the right position, which worked and was the method I used to make the van move for the game.
+<br
+The main problem I had with making ths game feature was finding which method works best to make the van move. The first thing I tried was using Move to location, which didn't work as the actor needed an AI controller. After adding an AI controller, it still didn't work, so I tried using a nav mesh, but that didn't work due to the scene getting in the way at random points. The last thing I tried was using a sequence that plays when the player is in the right position, which worked and was the method I used to make the van move for the game.
+
 
 ### What creative or technical approaches did you use or try, and how did this contribute to the outcome?
 
@@ -189,9 +190,11 @@ One technical difficulty I faced during development was an error that occurred w
 
 ## Outcome
 
-- [Video Link]()
-- [Repo Link](https://github.com/C6WX/Group-8)
-- [Itch.io Link](https://lunarlynx-games.itch.io/grave-robbing)
+- [Video](https://youtu.be/4QdSuAS7i10?si=e-mLcFqxbVwRJyVi)
+- [Github](https://github.com/C6WX/Group-8)
+- [Itch.io](https://lunarlynx-games.itch.io/grave-robbing)
+- [ADD](https://ucreative.sharepoint.com/:p:/r/sites/UC_24.25_FGCT4007_TeamWorkingFiles/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Bc80179b1-ac11-41a4-a3ab-8fcc0d498f00%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1747947996380&web=1)
+- [Presentation](https://ucreative.sharepoint.com/:p:/r/sites/UC_24.25_FGCT4007_TeamWorkingFiles/_layouts/15/Doc2.aspx?action=edit&sourcedoc=%7Bded36632-e701-4089-9aef-cb2da14b8024%7D&wdOrigin=TEAMS-MAGLEV.teamsSdk_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1747947998704&web=1)
 
 ## Critical Reflection
 
